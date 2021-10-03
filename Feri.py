@@ -100,8 +100,8 @@ async def type_and_send(message):
         responsess = responsee.replace("Aco", f"{KONTOL}")
     else:
         responsess = responsee
-    if "Who is feri?" in responsess:
-        responsess2 = responsess.replace("Who is feri?", "Kontol bapak kau pecah")
+    if "Who is senna?" in responsess:
+        responsess2 = responsess.replace("Who is senna?", "Kontol bapak kau pecah")
     else:
         responsess2 = responsess
     await message.reply_text(responsess2)
@@ -131,7 +131,7 @@ async def chat(_, message: Message):
             return
     else:
         match = re.search(
-            "[.|\n]{0,}feri[.|\n]{0,}",
+            "[.|\n]{0,}senna[.|\n]{0,}",
             message.text.strip(),
             flags=re.IGNORECASE,
         )
@@ -228,17 +228,17 @@ async def alive(client: Client, message: Message):
 caption=f"""**༄ Holla I'm [{KONTOL}](https://t.me/{BOT_USERNAME})**
 ༄ **I'm Working Properly**
 ༄ **Bot : 8.0 LATEST**
-༄ **My Master : [Feri](https://t.me/xflicks)**
+༄ **My Master : [Senno](https://t.me/Sangsenno)**
 ༄ **Service Uptime : `{uptime}`**
 **Thanks For Using Me ♥️**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ꜱᴏᴜʀᴄᴇ", url="https://github.com/FeriEXP/FeriChatBot"
+                        "Instagram", url="https://www.instagram.com/gungg_14/"
                     ),
                     InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/anossupport"
+                        "ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/negrisang"
                     )
                 ]
             ]
